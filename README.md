@@ -1,2 +1,2 @@
 # artix-termux
-artix on termux!!!
+This script is fork anlinux's script.
