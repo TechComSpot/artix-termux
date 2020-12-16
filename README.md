@@ -1,7 +1,7 @@
 # Artix-termux
 just a script that help you setup artix linux in termux
 # How to install
-curl https://git.io/JLsq2 > artix.sh
+curl https://raw.githubusercontent.com/zcake3000/artix-termux/main/artix.sh > artix.sh
 
 bash artix.sh
 # Know issue
