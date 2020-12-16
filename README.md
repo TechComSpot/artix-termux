@@ -1,12 +1,15 @@
-# artix-termux
+# Artix-termux
 just a script that help you setup artix linux in termux
-# how to install
+# How to install
 curl https://git.io/JLsq2 > artix.sh
-bash artix.sh
-# know issue
 
-there have issue some issue when decompressing rootfs.
+bash artix.sh
+# Know issue
+
+There have issue some issue when decompressing rootfs.
 
 Please ignore it.
 
-becase artix work fine with those issue.
+Becase artix work fine with those issue.
+
+#This script is based on anlinux's arch linux install scipt.
