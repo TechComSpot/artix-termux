@@ -1,7 +1,7 @@
 # artix-termux
 This script is fork anlinux's script.
 
-#know issue
+# know issue
 
 there have issue some issue when decompressing rootfs.
 
