@@ -12,4 +12,4 @@ Please ignore it.
 
 Becase artix work fine with those issue.
 
-#This script is based on anlinux's arch linux install scipt.
+#This script is based on [anlinux's arch linux](https://github.com/EXALAB/Anlinux-Resources/blob/master/Scripts/Installer/Arch/armhf/arch.sh) install scipt.
