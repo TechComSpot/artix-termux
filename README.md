@@ -1,5 +1,5 @@
 # artix-termux
-This script is fork anlinux's script.
+just a script that help you setup artix linux in termux
 
 # know issue
 
