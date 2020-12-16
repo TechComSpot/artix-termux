@@ -15,5 +15,7 @@ Please ignore it.
 
 Becase artix linux work fine with those issue.
 
+# Gitlab Mirror
+https://gitlab.com/zcake/artix-termux
 # It based on
 This script is based on [anlinux's arch linux](https://github.com/EXALAB/Anlinux-Resources/blob/master/Scripts/Installer/Arch/armhf/arch.sh) install scipt.
