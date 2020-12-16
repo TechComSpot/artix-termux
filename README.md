@@ -1,5 +1,8 @@
 # Artix-termux
-just a script that help you setup artix linux in termux
+Just a script that help you setup artix linux in termux
+
+![ss](https://github.com/zcake3000/artix-termux/raw/main/Screenshot_20201216-085028_Termux.jpg)
+
 # How to install
 curl https://raw.githubusercontent.com/zcake3000/artix-termux/main/artix.sh > artix.sh
 
