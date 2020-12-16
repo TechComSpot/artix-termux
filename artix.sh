@@ -77,14 +77,15 @@ echo 'nameserver 8.8.8.8'>./artix-fs/etc/resolv.conf
 touch ./artix-fs/root/.bashrc
 cat > ./artix-fs/root/.bashrc << EOF
 #!/bin/bash
-echo 'remove '
+echo 'remove trash'
 pacman -R linux-aarch64 --noconfirm
-echo 'updateing'
+echo 'updateing artix'
 pacman -Syu --noconfirm
 rm .bashrc
 echo "You can now launch Artix Linux with the ./${bin} script"
 exit
 EOF
+echo 'makeing fakeing /proc'
 mkdir ./proc
 cat  > ./proc/version << EOF
 Linux version 5.9.12-artix1-1 (linux@artixlinux) (gcc (GCC) 10.2.0, GNU ld (GNU Binutils) 2.35.1) #1 SMP PREEMPT Wed, 02 Dec 2020 22:03:38 +0000
