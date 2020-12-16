@@ -13,10 +13,8 @@ if [ "$first" != 1 ];then
 		case `dpkg --print-architecture` in
 		aarch64)
 			archurl="aarch64" ;;
-		arm)
-			archurl="armv7" ;;
 		*)
-			echo "unknown architecture"; exit 1 ;;
+			echo "not support architecture"; exit 1 ;;
 		esac
 		wget "https://armtix.artixlinux.org/images/armtix-openrc-20201201.tar.xz" -O $tarball
 	fi
