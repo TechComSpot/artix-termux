@@ -13,7 +13,7 @@ There have issue some issue when decompressing rootfs.
 
 Please ignore it.
 
-Becase artix linux work fine with those issue.
+Becase artix linux work fine with those issue. :)
 
 # Gitlab Mirror
 https://gitlab.com/zcake/artix-termux
