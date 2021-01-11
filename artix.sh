@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 pkg update
-pkg install wget openssl-tool proot tar -y
+pkg install pulseaudio wget openssl-tool proot tar -y
 folder=artix-fs
 if [ -d "$folder" ]; then
 	first=1
@@ -56,6 +56,7 @@ command+=" /usr/bin/env -i"
 command+=" HOME=/root"
 command+=" PATH=/usr/local/sbin:/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/games:/usr/local/games"
 command+=" TERM=\$TERM"
+command+=" PULSE_SERVER=tcp:127.0.0.1:4713"
 command+=" LANG=C.UTF-8"
 command+=" /bin/su"
 com="\$@"
@@ -103,4 +104,6 @@ procs_running 1
 procs_blocked 1
 softirq 2417755 20210 271643 349 69842 63309 0 133492 760379 1864 1096667
 EOC
+echo 'setup audio'
+echo "load-module module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" >> ~/../usr/etc/pulse/default.pa
 ./start-artix.sh
