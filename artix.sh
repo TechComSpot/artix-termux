@@ -57,7 +57,7 @@ command+=" HOME=/root"
 command+=" PATH=/usr/local/sbin:/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/games:/usr/local/games"
 command+=" TERM=\$TERM"
 command+=" PULSE_SERVER=tcp:127.0.0.1:4713"
-command+=" LANG=C.UTF-8"
+command+=" LANG=en_US.UTF-8"
 command+=" /bin/su"
 com="\$@"
 if [ -z "\$1" ];then
@@ -81,6 +81,12 @@ echo 'remove trash'
 pacman -R linux-aarch64 --noconfirm
 echo 'updateing artix'
 pacman -Syu --noconfirm
+echo 'setting local'
+echo 'en_US.UTF-8' > /etc/
+sed 's|#en_US.UTF-8 UTF-8|en_US.UTF-8 UTF-8|g'  artix-fs/etc/locale.gen > artix-fs/etc/locale.gen.tmp
+rm artix-fs/etc/locale.gen
+mv artix-fs/etc/locale.gen.tmp artix-fs/etc/locale.gen
+locale-gen
 rm .bashrc
 echo "You can now launch Artix Linux with the ./${bin} script"
 exit
