@@ -4,7 +4,7 @@ Just a script that help you setup artix linux in termux
 ![ss](https://github.com/zcake3000/artix-termux/raw/main/Screenshot_20201216-085028_Termux.jpg)
 
 # How to install
-run this command inside termux ↓↓↓
+Run this command inside termux ↓↓↓
 ````
 curl https://raw.githubusercontent.com/zcake3000/artix-termux/main/artix.sh > artix.sh
 
