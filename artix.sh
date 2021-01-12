@@ -30,7 +30,7 @@ bin=start-artix.sh
 echo "writing launch script"
 cat > $bin <<- EOM
 #!/bin/bash
-pulseaudio --start &
+nohup watch pulseaudio --start > /dev/zero 2>&1&
 cd \$(dirname \$0)
 ## unset LD_PRELOAD in case termux-exec is installed
 unset LD_PRELOAD
