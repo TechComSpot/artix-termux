@@ -80,7 +80,7 @@ touch ./artix-fs/root/.bashrc
 cat > ./artix-fs/root/.bashrc << EOF
 #!/bin/bash
 echo 'remove trash'
-pacman -R linux-aarch64 --noconfirm
+pacman -R linux-aarch64-headers linux-api-headers linux-aarch64 --noconfirm
 echo 'updateing artix'
 pacman -Syu --noconfirm
 echo 'setting local'
