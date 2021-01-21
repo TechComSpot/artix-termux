@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 pkg update
-pkg install pulseaudio wget openssl-tool proot tar -y
+pkg install pulseaudio wget openssl proot tar -y
 folder=artix-fs
 if [ -d "$folder" ]; then
 	first=1
