@@ -88,6 +88,7 @@ sed -i 's|#en_US.UTF-8 UTF-8|en_US.UTF-8 UTF-8|g'  /etc/locale.gen
 locale-gen
 rm .bashrc
 echo "You can now launch Artix Linux with the ./${bin} script"
+echo "The artix linux install is finished.Pls press Ctrl+c to exit"
 exit
 EOF
 echo 'makeing fakeing /proc'
