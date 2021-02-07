@@ -17,7 +17,7 @@ if [ "$first" != 1 ];then
 		*)
 			echo "not support architecture"; exit 1 ;;
 		esac
-		wget "https://armtix.artixlinux.org/images/armtix-openrc-20210101.tar.xz" -O $tarball
+		wget "https://armtix.artixlinux.org/images/armtix-openrc-20210201.tar.xz" -O $tarball
 	fi
 	cur=`pwd`
 	mkdir -p "$folder"
