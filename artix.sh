@@ -12,7 +12,7 @@ if [ "$first" != 1 ];then
 		aarch64)
 			archurl="aarch64" ;;
 		*)
-			echo "your android device architecture`dpkg --print-architecture` is supported."; exit 1 ;;
+			echo "your android device architecture (`dpkg --print-architecture`) is supported."; exit 1 ;;
 		esac
 pkg update -y
 pkg update
