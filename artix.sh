@@ -1,7 +1,4 @@
 #!/data/data/com.termux/files/usr/bin/bash
-pkg update -y
-pkg update
-pkg install pulseaudio wget openssl proot tar -y
 folder=artix-fs
 if [ -d "$folder" ]; then
 	first=1
@@ -15,8 +12,11 @@ if [ "$first" != 1 ];then
 		aarch64)
 			archurl="aarch64" ;;
 		*)
-			echo "not support architecture"; exit 1 ;;
+			echo "your android device architecture`dpkg --print-architecture` is supported."; exit 1 ;;
 		esac
+pkg update -y
+pkg update
+pkg install pulseaudio wget openssl proot tar -y
 		wget "https://armtix.artixlinux.org/images/armtix-openrc-20210301.tar.xz" -O $tarball
 	fi
 	cur=`pwd`
