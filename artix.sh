@@ -100,7 +100,6 @@ mkdir ./proc
 cat  > ./proc/version << EOF
 Linux version 5.9.12-artix1-1 (linux@artixlinux) (gcc (GCC) 10.2.0, GNU ld (GNU Binutils) 2.35.1) #1 SMP PREEMPT Wed, 02 Dec 2020 22:03:38 +0000
 EOF
-if 
 cat > ./proc/stat << EOC
 cpu  84663 6 28703 449941 118351 2015 1255 0 0 0
 cpu0 21192 0 7042 108949 33618 263 189 0 0 0
