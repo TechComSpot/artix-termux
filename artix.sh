@@ -35,7 +35,10 @@ STAT='command+=" -b ./proc/stat:/proc/stat"'
 fi
 cat > $bin <<- EOM
 #!/bin/bash
-nohup watch pulseaudio --start > /dev/zero 2>&1&
+if ! pidof pulseaudio > /dev/zero 2>&1&
+then
+pulseaudio --start > /dev/zero 2>&1&
+fi
 cd \$(dirname \$0)
 ## unset LD_PRELOAD in case termux-exec is installed
 unset LD_PRELOAD
